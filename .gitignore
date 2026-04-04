@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+multivenv/
+
+# Environment
+.env
+
+# App data
+docs/
+vectorstore/
+
+# Docker
+.dockerignore
