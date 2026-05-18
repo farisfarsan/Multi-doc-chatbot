@@ -74,9 +74,8 @@ with st.sidebar:
                             st.session_state.chain = chain
                             st.session_state.retriever = retriever
                     else:
-                        # Clear files inside the volume-mounted folder (cannot rmtree)
-                        for f in os.listdir('vectorstore'):
-                            os.remove(os.path.join('vectorstore', f))
+                        shutil.rmtree('vectorstore')
+                        os.makedirs('vectorstore', exist_ok=True)
                         st.session_state.pop('chain', None)
                         st.session_state.pop('retriever', None)
                     st.rerun()

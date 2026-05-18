@@ -23,7 +23,7 @@ def get_chain():
         search_type='mmr',
         search_kwargs={'k': 10, 'fetch_k': 20}
     )
-    llm = ChatOpenAI(model='gpt-3.5-turbo', temperature=0, streaming=True)
+    llm = ChatOpenAI(model='gpt-4o-mini', temperature=0, streaming=True)
 
     prompt = ChatPromptTemplate.from_template("""
 You are a helpful assistant. Answer the question based only on the context below.
