@@ -115,7 +115,7 @@ Answer is streamed back with source citations
 | Layer | Technology |
 |---|---|
 | Frontend | Streamlit |
-| LLM | OpenAI GPT-3.5-turbo |
+| LLM | OpenAI GPT-4o-mini |
 | Embeddings | OpenAI text-embedding-ada-002 |
 | Vector Store | FAISS |
 | RAG Framework | LangChain |
